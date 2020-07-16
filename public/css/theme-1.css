@@ -1986,13 +1986,13 @@ blockquote {
   height: 345px;
 }
 .project.col-md-4 {
-  width: 33%;
+  width: 33% ;
 }
 .project.col-md-4:nth-child(even) {
   width: 34%;
 }
 .project.col-md-4 .background-image-holder {
-  width: 103%;
+  width: 100%;
 }
 .column-projects .project.col-md-4 {
   width: 33.33333%;
@@ -2047,7 +2047,7 @@ blockquote {
   -moz-transition: all .5s ease;
   transition: all .5s ease;
   opacity: 0;
-  padding-right: 15px;
+  padding: 0px 15px;
 }
 .project:hover .hover-state {
   opacity: 1;
