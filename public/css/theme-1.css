@@ -1982,61 +1982,73 @@ blockquote {
 .filters li.active {
   border-bottom: 2px solid #29d9c2;
 }
-.project {
+.projects-container-holder {
+  position: relative;
+}
+.project-item {
   height: 345px;
 }
-.project.col-md-4 {
+.project-item.col-md-4 {
   width: 33% ;
 }
-.project.col-md-4:nth-child(even) {
+.project-item.col-md-4:nth-child(2) {
   width: 34%;
 }
-.project.col-md-4 .background-image-holder {
+.project-item.col-md-4:nth-child(5) {
+  width: 34%;
+}
+.project-item.col-md-4 .background-image-holder {
   width: 100%;
 }
-.column-projects .project.col-md-4 {
+.column-projects .project-item.col-md-4 {
   width: 33.33333%;
   overflow: hidden;
 }
-.column-projects .project.col-md-4 .background-image-holder {
+.column-projects .project-item.col-md-4 .background-image-holder {
   width: 100% !important;
 }
-.column-projects .project {
+.column-projects .project-item {
   overflow: hidden;
 }
 @media screen and (max-width: 990px) {
-  .project.col-md-4 {
-    width: 50%;
-  }
-  .project.col-md-4:nth-child(even) {
-    width: 50%;
-  }
-  .project.col-md-4 .background-image-holder {
+  .project-item.col-md-4 {
     width: 100%;
   }
-  .column-projects .project.col-md-4 {
-    width: 50%;
+  .project-item.col-md-4:nth-child(2) {
+    width: 100%;
+  }
+  .project-item.col-md-4:nth-child(5) {
+    width: 100%;
+  }
+  .project-item.col-md-4 .background-image-holder {
+    width: 100%;
+  }
+  .column-projects .project-item.col-md-4 {
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
-  .project.col-md-4 {
+  .project-item.col-md-4 {
     width: 100%;
   }
-  .project.col-md-4:nth-child(even) {
+  .project-item.col-md-4:nth-child(2) {
     width: 100%;
   }
-  .column-projects .project.col-md-4 {
+  .project-item.col-md-4:nth-child(5) {
+    width: 100%;
+  }
+  .column-projects .project-item.col-md-4 {
     width: 100%;
   }
 }
-.project .image-holder {
+.project-item .image-holder {
   overflow: hidden;
   position: relative;
 }
-.project img {
+.project-item img {
   width: 100%;
 }
-.project .hover-state {
+.project-item .hover-state {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2049,21 +2061,21 @@ blockquote {
   opacity: 0;
   padding: 0px 15px;
 }
-.project:hover .hover-state {
+.project-item:hover .hover-state {
   opacity: 1;
 }
-.project .hover-state h1 {
+.project-item .hover-state h1 {
   margin-bottom: 8px;
   font-size: 24px;
 }
-.project .hover-state h3 {
+.project-item .hover-state h3 {
   font-size: 18px;
   margin-bottom: 8px;
 }
-.project .hover-state p {
+.project-item .hover-state p {
   margin-bottom: 24px;
 }
-.project .hover-state .btn-white:hover {
+.project-item .hover-state .btn-white:hover {
   color: #2f2933;
 }
 .hover-state .align-vertical {
@@ -2075,7 +2087,7 @@ blockquote {
   transition: all .5s ease;
   opacity: 0;
 }
-.project:hover .align-vertical {
+.project-item:hover .align-vertical {
   -webkit-transform: translate3d(0, 0px, 0);
   -moz-transform: translate3d(0, 0px, 0);
   transform: translate3d(0, 0px, 0);
@@ -2084,14 +2096,14 @@ blockquote {
 .column-projects {
   margin-bottom: 80px;
 }
-.column-projects .project {
+.column-projects .project-item {
   height: 300px;
   margin-bottom: 15px;
 }
-.column-projects .project .hover-state h3 {
+.column-projects .project-item .hover-state h3 {
   margin-bottom: 24px;
 }
-.column-projects .project .background-image-holder {
+.column-projects .project-item .background-image-holder {
   left: 15px;
 }
 .image-gallery {
