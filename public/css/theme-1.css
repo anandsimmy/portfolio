@@ -1094,6 +1094,11 @@ header.fullscreen-element .overlay:before,
   border-color: #fff;
   color: #fff;
 }
+#hackerrank {
+  max-width: none;
+  width: 42px;
+  color: #52b456;
+}
 .feature {
   overflow: hidden;
 }
